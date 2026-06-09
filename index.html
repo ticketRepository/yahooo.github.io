@@ -56,15 +56,18 @@ var TLDataContext = {
     ya('hit', 'pageview,webPerformance');
 </script>
 <script>
-(() => {
-  const min = 4, max = 50, range = max - min + 1;
-  const init = () => {
-    document.querySelectorAll('.elTicketNum').forEach(el => {
-      el.textContent = `N-${Math.floor(Math.random() * range) + min}`;
-    });
-  };
-  document.readyState === 'loading' ? document.addEventListener('DOMContentLoaded', init) : init();
-})();
+document.addEventListener('DOMContentLoaded', () => {
+  const min = 4;
+  const max = 50;
+
+  // 找到页面上所有 .elTicketNum
+  const els = document.querySelectorAll('.elTicketNum');
+
+   els.forEach(el => {
+    const num = Math.floor(Math.random() * (max - min + 1)) + min; // 4~50
+    el.textContent = 'N-' + num; // 修改前缀为 N-
+  });
+});
 </script>
 </head>
 <body>
