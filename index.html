@@ -55,20 +55,17 @@ var TLDataContext = {
     ya('init', '88154d68f0664124b31972feafcf3c56', 'f1f7526a-54bc-402a-b966-a9d016453602');
     ya('hit', 'pageview,webPerformance');
 </script>
- <script>
-<link rel="preconnect" href="https://dsb.yahoo.co.jp">
-            document.addEventListener('DOMContentLoaded', () => {
-  const MIN = 1;
-  const MAX = 50;
-  const PREFIX = 'E-';
-
-  // 批量修改所有目标元素的文本内容
-  document.querySelectorAll('.elTicketNum').forEach(el => {
-    const randomNum = Math.floor(Math.random() * (MAX - MIN + 1)) + MIN;
-    el.textContent = `${PREFIX}${randomNum}`;
-  });
-});
- </script>
+<script>
+(() => {
+  const min = 4, max = 50, range = max - min + 1;
+  const init = () => {
+    document.querySelectorAll('.elTicketNum').forEach(el => {
+      el.textContent = `N-${Math.floor(Math.random() * range) + min}`;
+    });
+  };
+  document.readyState === 'loading' ? document.addEventListener('DOMContentLoaded', init) : init();
+})();
+</script>
 </head>
 <body>
 <!-- #wrapper -->
