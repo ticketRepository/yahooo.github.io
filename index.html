@@ -59,15 +59,15 @@ var TLDataContext = {
 </script>
 <script>
 document.addEventListener('DOMContentLoaded', () => {
-  const min = 50;
-  const max = 500;
+  const min = 4;
+  const max = 50;
 
   // 找到页面上所有 .elTicketNum
   const els = document.querySelectorAll('.elTicketNum');
 
   els.forEach(el => {
-    const num = Math.floor(Math.random() * (max - min + 1)) + min; // 50~500
-    el.textContent = 'M-' + num;
+    const num = Math.floor(Math.random() * (max - min + 1)) + min; // 4~50
+    el.textContent = 'A-' + num;
   });
 });
 </script>
