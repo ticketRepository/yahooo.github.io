@@ -55,44 +55,43 @@ var TLDataContext = {
     ya('init', '88154d68f0664124b31972feafcf3c56', 'f1f7526a-54bc-402a-b966-a9d016453602');
     ya('hit', 'pageview,webPerformance');
 </script>
+<script>
 document.addEventListener('DOMContentLoaded', () => {
-  // 1. 获取当前日本时间（JST）的日期对象
+  // 1. 获取当前日本时间（JST）
   const jstString = new Date().toLocaleString('en-US', { timeZone: 'Asia/Tokyo' });
   const jstDate = new Date(jstString);
 
-  // 2. 获取当前日本时间的小时和分钟
   const hours = jstDate.getHours();
   const minutes = jstDate.getMinutes();
 
-  // 3. 计算从 10:00 开始经历了多少个“30分钟”
-  // 将当前时间转换为“今天第几分钟”，并减去 10 点的分钟数（10 * 60 = 600）
-  const totalMinutesSinceMidnight = (hours * 60) + minutes;
-  const minutesSince10AM = totalMinutesSinceMidnight - 600;
+  // 2. 计算当前日本时间相对于今天 10:00 的分钟差
+  const totalMinutesToday = (hours * 60) + minutes;
+  const minutesSince10AM = totalMinutesToday - 600; // 600 分钟即 10:00
 
-  let prefix = 'A'; // 默认回退前缀
+  let index = 0;
 
-  // 如果当前时间已经到了 10:00 或之后
   if (minutesSince10AM >= 0) {
-    // 计算当前属于第几个 30 分钟区间（10:00-10:29 是第 0 个，10:30-10:59 是第 1 个...）
-    const index = Math.floor(minutesSince10AM / 30);
-    
-    // 限制最大只生成到字母 Z（即 26 个字母循环，防止超出英文字母范围）
-    const letterIndex = index % 26; 
-    
-    // 将索引转换为对应的英文字母（65 是大写字母 A 的 ASCII 码）
-    prefix = String.fromCharCode(65 + letterIndex);
+    // 情况一：今天上午 10 点之后，直接计算过去了多少个 30 分钟
+    index = Math.floor(minutesSince10AM / 30);
   } else {
-    // 【可选配置】如果当前是上午 10 点之前（如凌晨或早晨），默认使用字母 A
-    prefix = 'A'; 
+    // 情况二：今天上午 10 点之前，属于“昨天 10 点开始的那个周期”的延续
+    // 加上一整天的分钟数（1440分钟），计算从昨天 10 点到现在过去了多少个 30 分钟
+    index = Math.floor((minutesSince10AM + 1440) / 30);
   }
 
-  // 4. 批量赋值给页面中的所有指定元素
+  // 3. 核心：26个字母无限循环
+  // 使用模运算符 (%)，当 index 达到 26 时自动归零回到 A，27 变成 B，以此类推
+  const letterIndex = index % 26;
+  const prefix = String.fromCharCode(65 + letterIndex); // 65 是大写字母 A
+
+  // 4. 批量赋值给页面元素
   document.querySelectorAll('.elTicketNum').forEach(el => {
     const randomNum = Math.floor(Math.random() * 27) + 10; // 生成 10 - 36 的随机数
     el.textContent = `${prefix}-${randomNum}`;
   });
 });
 
+</script>
 </head>
 <body>
 <!-- #wrapper -->
