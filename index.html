@@ -1,402 +1,690 @@
-<html><head>
-<meta http-equiv="content-type" content="text/html; charset=UTF-8">
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
-<title>チケット情報 - パスマーケット</title>
-<meta name="description" content="チケット情報！チケット購入はパスマーケットで！">
-<meta name="keywords" content="チケット販売,チケット作成,無料チケット,電子チケット販売,電子チケット作成,イベント情報,チケット購入,映画,試写会,コンサート,街コン">
-<meta name="robots" content="index,follow,noarchive">
-<meta name="twitter:title" content="チケット情報">
-<meta name="twitter:description" content="">
-<meta name="twitter:card" content="summary">
-<meta name="twitter:site" content="YJPassMarket">
-<meta name="twitter:domain" content="passmarket.yahoo.co.jp">
-<meta property="og:type" content="website">
-<meta property="og:image" content="https://s.yimg.jp/images/passmarket/smartphone/front/image/1.0.0/img_ogp.png">
-<meta property="og:description" content="手数料0円！Yahoo! JAPANのデジタルチケット">
-<meta property="og:site_name" content="PassMarket">
-<link rel="stylesheet" href="https://s.yimg.jp/images/passmarket/smartphone/front/css/2.1.13/common.css" media="all">
-<link rel="stylesheet" href="https://s.yimg.jp/images/passmarket/smartphone/front/css/2.1.13/lib.css" media="all">
-<link rel="stylesheet" href="https://s.yimg.jp/images/passmarket/smartphone/front/css/2.1.13/header.css" media="all">
-<link rel="stylesheet" href="https://s.yimg.jp/images/passmarket/smartphone/front/css/2.1.13/footer.css" media="all">
-            <link rel="stylesheet" href="https://s.yimg.jp/images/passmarket/smartphone/front/css/2.1.13/front.css" media="all">
+<!DOCTYPE html>
+<html>
+  <head>
+      <!-- Google Tag Manager -->
+  <script>
+    (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0], j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src= 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-P9D7D7');
+  </script>
+  <!-- End Google Tag Manager -->
+
+    <title id="page_title">
+        マイチケット詳細｜LivePocket（ライブポケット）
+    </title>
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://livepocket.jp/packs/user/media/images/ogp_image-7753424e3d1955f54264.jpg">
+    <meta property="og:url" content="https://livepocket.jp/mytickets/93457300">
+    <meta property="og:title" content="マイチケット詳細｜LivePocket（ライブポケット）">
+    <meta property="og:site_name" content="LivePocket">
+    <meta property="fb:app_id" content="382927681730507">
+    <meta property="twitter:card" content="summary">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="FysjUZh_031dIiXx6N0k-sxRwf6uT_6VRAFI8_dgVRorM8HDF6PZHZMOLxN1lpT-KK9nDQcARRJ5S92mmZJi2g" />
     
-<script src="https://s.yimg.jp/images/ds/yas/tmual-4.2.0.min.js" async=""></script><script type="text/javascript" src="https://s.yimg.jp/images/commerce/js/libs/jquery/core/3.5.1/jquery.min.js"></script>
-<script type="text/javascript" src="https://s.yimg.jp/images/passmarket/js/tablet/my/3.0.0/ticket/sheet_all.js"></script>
-<script src="https://s.yimg.jp/images/passmarket/js/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
-<link rel="stylesheet" href="https://s.yimg.jp/images/passmarket/js/libs/jqueryui/1.12.1/jquery-ui.min.css">
-
-<meta name="format-detection" content="telephone=no">
-<link rel="apple-touch-icon" href="https://s.yimg.jp/images//ipn/wcb/passmarket129.png">
-<meta name="application-name" content="PassMarket">
-<link rel="manifest" href="/manifest.json">
-<script type="text/javascript">
-var TLDataContext = {
-  ual : {
-    pageview : {
-      opttype : 'pc',
-      content_id : '',
-      id_type : '',
-      nopv : 'false',
-      mtestid : '',
-      ss_join_id : '',
-      ss_join_id_type : '',
-      hierarchy_id : ''
-    }
-  }
-};
-</script>
-<script type="text/javascript" async="" src="https://s.yimg.jp/images/ds/managed/1/managed-ual.min.js?tk=d91e97e5-f608-408f-9d68-1a7711fdbb52&amp;service=passmarket">
-</script>
-<script async="" src="https://s.yimg.jp/images/ds/yas/ya-1.6.4.min.js"></script>
-<script>
-    window.yacmds = window.yacmds || [];
-    window.ya = window.ya || function () { yacmds.push(arguments) };
-    ya('init', '88154d68f0664124b31972feafcf3c56', 'f1f7526a-54bc-402a-b966-a9d016453602');
-    ya('hit', 'pageview,webPerformance');
-</script>
-<script>
-document.addEventListener('DOMContentLoaded', () => {
-  // 1. 获取当前日本时间（JST）
-  const jstString = new Date().toLocaleString('en-US', { timeZone: 'Asia/Tokyo' });
-  const jstDate = new Date(jstString);
-
-  const month = jstDate.getMonth() + 1; // 月份从0开始，需要+1
-  const date = jstDate.getDate();       // 当前日期
-  const hours = jstDate.getHours();
-  const minutes = jstDate.getMinutes();
-
-  // 2. 计算当前日本时间相对于今天 10:00 的分钟差
-  const totalMinutesToday = (hours * 60) + minutes;
-  const minutesSince10AM = totalMinutesToday - 600; // 600 分钟即 10:00
-
-  let index = 0;
-  let targetHours = 10;
-  let targetMinutes = 0;
-
-  if (minutesSince10AM >= 0) {
-    // 情况一：今天上午 10 点之后
-    index = Math.floor(minutesSince10AM / 30);
+    <link rel="stylesheet" href="/packs/user/application-78a741f412bd5a8f555d.css" data-turbo-track="reload" />
+    <script src="/packs/user/application-71af951e6c08d001628f.js" data-turbo-track="reload" defer="defer"></script>
+    <meta name="turbo-prefetch" content="false">
+    <meta name="format-detection" content="telephone=no" />
     
-    // 计算当前 30 分钟区间的起始时间
-    // 比如 10:35 分，minutesSince10AM 是 35，index 是 1
-    // 起始分钟数就是 10:00 的 600 分钟 + 1 * 30 = 630 分钟 ➔ 转换回 10:30
-    const startMinutesSinceMidnight = 600 + (index * 30);
-    targetHours = Math.floor(startMinutesSinceMidnight / 60) % 24; // 超过24点自动取模
-    targetMinutes = startMinutesSinceMidnight % 60;
-  } else {
-    // 情况二：今天上午 10 点之前（属于昨天周期的延续）
-    index = Math.floor((minutesSince10AM + 1440) / 30);
     
-    // 计算昨天开始延续过来的区间起始时间
-    const startMinutesSinceMidnight = 600 + (index * 30);
-    targetHours = Math.floor(startMinutesSinceMidnight / 60) % 24;
-    targetMinutes = startMinutesSinceMidnight % 60;
-  }
+        <script src="//j.wovn.io/1" data-wovnio="key=Fc9MyM" async></script>
 
-  // 3. 计算 26 个字母循环前缀
-  const letterIndex = index % 26;
-  const prefix = String.fromCharCode(65 + letterIndex); // 65 是大写 A
-
-  // 4. 格式化输出的时间文本（确保分钟显示为 00 或 30）
-  const timeText = `${targetHours.toString().padStart(2, '0')}:${targetMinutes.toString().padStart(2, '0')}`;
-
-  // 5. 【新增功能】动态更新页面中的 <p class="elItemName">
-  document.querySelectorAll('.elItemName').forEach(el => {
-    // 自动生成最新的文本：例如 "6月13日物販入場整理券　10:30〜"
-    el.textContent = `${month}月${date}日物販入場整理券　${timeText}〜`;
-  });
-
-  // 6. 批量赋值票号给页面元素
-  document.querySelectorAll('.elTicketNum').forEach(el => {
-    const randomNum = Math.floor(Math.random() * 27) + 10; // 生成 10 - 36 的随机数
-    el.textContent = `${prefix}-${randomNum}`;
-  });
-});
-
+    
+    <link rel="icon" type="image/x-icon" href="/packs/user/media/images/favicon-2860deb36988372e322c.ico" sizes="32x32" />
+    <link rel="icon" type="image/svg+xml" href="/packs/user/media/images/icon-7e02e0ad2bf2b60946ee.svg" />
+    <link rel="apple-touch-icon" type="image/png" href="/packs/user/media/images/apple-touch-icon-64d914d976bacc019824.png" />
+  </head>
+  <body>
+    <div data-controller='gtm-spa-pageview'></div>
+    <script>
+(function (c, n, s) {
+   if (c[n] === void 0) {c['ULObject'] = n;
+   c[n] = c[n] || function () {(c[n].q = c[n].q || []).push(arguments)};
+   c[n].l = 1 * new Date();var e = document.createElement('script');
+   e.async = 1;e.src = s + "/chatbot.js";
+   var t = document.getElementsByTagName('script')[0];t.parentNode.insertBefore(e, t);}
+})(window, 'ul_widget', 'https://support-widget.nakanohito.jp');
+ul_widget('init', { 'id': 341, 'lg_id': '', 'mode_spa': true });
 </script>
-</head>
-<body>
-<!-- #wrapper -->
-<div id="wrapper">
-<header id="header">
-<div>
-<nav class="ypMdHeaderNaviRn">
-<ul class="elMainNavi">
-<li class="logo"><span><a href="https://passmarket.yahoo.co.jp/">PassMarket</a></span></li>
-<li class="setting"><span><a>設定</a></span></li>
-<li class="login"><span><a>My</a></span></li>
-<li class="ytop"><span><a href="https://m.yahoo.co.jp/">Yahoo! JAPAN</a></span></li>
-</ul>
-<ul class="elSubNavi setting">
-<li><a href="https://passmarket.yahoo.co.jp/special/attender/">パスマーケットとは？</a></li>
-<li><a href="https://passmarket.yahoo.co.jp/special/organizer/">チケット販売主の方へ</a></li>
-<li><a href="https://passmarket.yahoo.co.jp/organizer/basic/cms">チケット作成管理</a></li>
-<li><a href="https://blog-passmarket.yahoo.co.jp/howuse/">使い方</a></li>
-</ul>
 
-<ul class="elSubNavi login">
-<li><a href="https://passmarket.yahoo.co.jp/my/ticket/list">購入済みのチケット</a></li>
-<li><a href="https://passmarket.yahoo.co.jp/my/entry/list">抽選申し込み履歴</a></li>
-<li><a href="https://passmarket.yahoo.co.jp/user/update/edit">ユーザー情報の編集</a></li>
-</ul>
+      <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P9D7D7" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
 
-<!-- Notification header -->
-<!-- These checks are performed to prevent an empty <elNotice> element from being generated -->
-    <div class="elNotice elNoticeBgWh">
-                                    <a class="libNotice elWarning" href="https://blog-passmarket.yahoo.co.jp/archives/post_15.html">
-                    <div class="elTitle">【重要】PassMarketサービスの終了について</div>
-                    <p></p>
-                </a>
-                        </div>
-</nav>
-<!-- Notification header -->
-</div>
-</header>
-<!-- resale header -->
-<!-- /resale header -->
+    
+    <div id="top" class="wrapper" data-controller="aria-disabled reload-on-history">
+        <div id="toast_messages"></div>
+      <header class="header" data-controller="header target_modal" data-action="resize@window->header#layout">
+  <div class="header__inner">
+    <a class="header__logo" target="" rel="" href="/my_top">
+      <img alt="LivePocket" width="145" height="27" loading="lazy" src="/packs/user/media/images/logo-b9cd34b546074aa9be9a.png" />
+</a>
+    <nav class="header-nav">
+      <button type="button" class="header-nav__button js-header-menu-close" data-action="click->header#menuclose">閉じる</button>
 
-<!-- #content -->
-<div id="content">
-<!-- pageTitle -->
-<section class="ypMdPageTitle">
-<header class="ypMdPageTitle libLabel sizL elNaviBtn decPcNavResp">
-<h1 class="elTitle">チケット情報</h1>
-<ul class="ptsNavi">
-<li class="elLeft"><a class="libButton sizS elBack" href="https://passmarket.yahoo.co.jp/my/ticket/detail?order_id=02155WV6QR2EC">戻る</a></li>
-</ul>
-</header>
-</section><!--/ypMdPageTitle-->
+      <ul class="header-nav__list">
+        <li class="header-nav__item">
+          <button type="button" class="header-nav__link header-nav__link--search js-header-menu-trigger" aria-expanded="false" data-target="#search" data-action="click->header#menuopen">
+            <span class="header-nav__open">検索</span>
+            <span class="header-nav__close">閉じる</span>
+          </button>
 
-<!-- /pageTitle -->
-<!-- ticketInfo -->
-<section class="ypMdTicketInfo" style="position:relative; width: 100%; overflow-x: hidden;">
-<div id="psmTicketCount" style="display:none" value="1"></div>
-<div id="psmIndexNo" style="display:none" value="1"></div>
-<div class="decBgGr"><div class="decBgWh" style="height: 541px;">
+          <!-- 検索メニュー -->
+          <div id="search" class="header-menu js-header-menu" aria-label="検索メニュー">
+            <div class="header-search">
+              <div class="header-search__head">
+                <form class="input-search input-search--full" action="/event/search" accept-charset="UTF-8" method="get">
+                  <input type="search" title="イベント検索" class="input-search__input" placeholder="フリーワードで検索" maxlength="100" size="100" name="word" id="word" />
+                  <input type="submit" name="commit" value="検索する" class="input-search__button" data-disable-with="検索する" />
+</form>              </div>
 
-<div class="psmTicketHead">
+              <ul class="header-search-list" data-controller="toggle">
+                  <li class="header-search-list__item js-toggle">
+                    <button type="button" id="hd_01_tgl" class="header-search-list__toggle js-toggle-trigger" aria-controls="hd_01_pnl" aria-expanded="false" data-action="click->toggle#open">音楽</button>
 
-<div class="ptsTickPager">
-  <p id="psmPageNo" class="elCurr" style="font-size:18px;">1 / 1</p>
-<ul class="elNavi">
-<li id="psmBackButton" class="elBack" style="display:none"><a class="libButton sizS elBack" style="border: 1px #ff00c6 solid;" href="javascript:void(0);">前のチケット</a></li>
-<li id="psmNextButton" class="elNext" style="display:none"><a class="libButton sizS elNext" style="border: 1px #ff00c6 solid;" href="javascript:void(0);">次のチケット</a></li>
-</ul>
-</div>
-</div>
-<noscript>
-<div style="padding-top:20px;padding-bottom:25px;text-align:center;color:red">
-<p>チケットを表示できませんでした。</p><br>
-<p>JavaScriptが有効になっているか、<br>ブラウザの設定をご確認ください。</p>
-</div>
-</noscript>
-<div class="psmTicketView" style="position: absolute; overflow: hidden; display: block; left: 0px; width: 486px;">
-<div class="psmTicketWrap" id="swipe" style="width: 486px;">
-<div class="psmTicket" style="float: left; width: 468px; padding-left: 9px; padding-right: 9px;" value="1">
-<div id="stampCheckinId1"></div>
-<div id="psmKakao1" style="display:none" value="デジタルチケットを1枚送付します。\n\nイベント名：【横浜会場】物販入場整理券6月13日(土)\nチケット番号：A-39\nチケット名：6月12日物販入場整理券　14：00〜\n購入者名：ZHANG YUN\n\n印刷または画面に表示してご利用いただけます。\n\n詳しい受付方法はこちらをご確認ください。
-https://passmarket.yahoo.co.jp/event/show/acception/02t7m8t60d551.html#accept\n\nPassMarketのチケットについて
-https://blog-passmarket.yahoo.co.jp/archives/utilization.html"></div>
-<section class="dspTransferError libNotice elFail" style="display:none">
-<p style="text-align: left"></p>
-</section>
-<div class="ptsQr dspTransferAfter" style="display:none">
-<p class="elTicketNum">A-39</p>
-<div class="ptsTransferAfter">
-<dl>
-  <dt>このチケットは<br>さんが受け取り済みです</dt>
-</dl>
-</div>
-</div> <!-- dspTransferAfter -->
-<div class="dspTransferBefore" style="display:block">
-<div class="ptsIndispErr" style="margin-bottom:20px"><p class="elInfo">入口にて整理券をご提示ください。</p></div>
-<div class="ptsTickRecept">
-  <p class="elTicketNum">A-39</p>
-    <p style="font-size:12px;">【横浜会場】物販入場整理券6月13日(土)</p>
-  <p class="elItemName">6月13日物販入場整理券　10:00〜</p>
-  </div>
-   <div class="ptsStatesBg" style="margin:0 auto 17px;background:url(https://psm-bucket-1.west.edge.storage-yahoo.jp/psm-udwpjcairrijnfo2rtuvg/ticket/bc/028vti0y2d551/b7/8a/F/1/m_1_18AdeuDPnpazWRakRcChA.png);background-repeat:no-repeat;background-blend-mode:overlay;background-position:center top;background-size:300px 230px;width: 300px;">
-          <div class="ptsStates" id="psmCheckinFieldA-39">
-      <div id="psmTicketA-39">
+                    <div id="hd_01_pnl" class="header-search-list__panel js-toggle-panel" aria-labelledby="hd_01_tgl">
+                      <ul class="header-search-child-list">
+                        <li class="header-search-child-list__item">
+                          <a class="header-search-child-list__link" target="" rel="" href="/event/search?l_cat=%E9%9F%B3%E6%A5%BD">音楽すべて</a>
+                        </li>
+                          <li class="header-search-child-list__item">
+                            <a class="header-search-child-list__link" target="" rel="" href="/event/search?l_cat=%E9%9F%B3%E6%A5%BD&amp;s_cat=%E9%82%A6%E6%A5%BD">邦楽</a>
+                          </li>
+                          <li class="header-search-child-list__item">
+                            <a class="header-search-child-list__link" target="" rel="" href="/event/search?l_cat=%E9%9F%B3%E6%A5%BD&amp;s_cat=%E3%83%AD%E3%83%83%E3%82%AF">ロック</a>
+                          </li>
+                          <li class="header-search-child-list__item">
+                            <a class="header-search-child-list__link" target="" rel="" href="/event/search?l_cat=%E9%9F%B3%E6%A5%BD&amp;s_cat=%E3%83%9D%E3%83%83%E3%83%97%E3%82%B9">ポップス</a>
+                          </li>
+                          <li class="header-search-child-list__item">
+                            <a class="header-search-child-list__link" target="" rel="" href="/event/search?l_cat=%E9%9F%B3%E6%A5%BD&amp;s_cat=%E3%83%95%E3%82%A7%E3%82%B9">フェス</a>
+                          </li>
+                          <li class="header-search-child-list__item">
+                            <a class="header-search-child-list__link" target="" rel="" href="/event/search?l_cat=%E9%9F%B3%E6%A5%BD&amp;s_cat=hiphop">hiphop</a>
+                          </li>
+                          <li class="header-search-child-list__item">
+                            <a class="header-search-child-list__link" target="" rel="" href="/event/search?l_cat=%E9%9F%B3%E6%A5%BD&amp;s_cat=JAZZ">JAZZ</a>
+                          </li>
+                          <li class="header-search-child-list__item">
+                            <a class="header-search-child-list__link" target="" rel="" href="/event/search?l_cat=%E9%9F%B3%E6%A5%BD&amp;s_cat=K-POP">K-POP</a>
+                          </li>
+                          <li class="header-search-child-list__item">
+                            <a class="header-search-child-list__link" target="" rel="" href="/event/search?l_cat=%E9%9F%B3%E6%A5%BD&amp;s_cat=%E3%82%AF%E3%83%A9%E3%82%B7%E3%83%83%E3%82%AF">クラシック</a>
+                          </li>
+                          <li class="header-search-child-list__item">
+                            <a class="header-search-child-list__link" target="" rel="" href="/event/search?l_cat=%E9%9F%B3%E6%A5%BD&amp;s_cat=%E3%83%B4%E3%82%A3%E3%82%B8%E3%83%A5%E3%82%A2%E3%83%AB%E7%B3%BB">ヴィジュアル系</a>
+                          </li>
+                          <li class="header-search-child-list__item">
+                            <a class="header-search-child-list__link" target="" rel="" href="/event/search?l_cat=%E9%9F%B3%E6%A5%BD&amp;s_cat=%E9%9F%B3%E6%A5%BD%E3%81%9D%E3%81%AE%E4%BB%96">音楽その他</a>
+                          </li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="header-search-list__item js-toggle">
+                    <button type="button" id="hd_02_tgl" class="header-search-list__toggle js-toggle-trigger" aria-controls="hd_02_pnl" aria-expanded="false" data-action="click->toggle#open">演劇・ステージ</button>
+
+                    <div id="hd_02_pnl" class="header-search-list__panel js-toggle-panel" aria-labelledby="hd_02_tgl">
+                      <ul class="header-search-child-list">
+                        <li class="header-search-child-list__item">
+                          <a class="header-search-child-list__link" target="" rel="" href="/event/search?l_cat=%E6%BC%94%E5%8A%87%E3%83%BB%E3%82%B9%E3%83%86%E3%83%BC%E3%82%B8">演劇・ステージすべて</a>
+                        </li>
+                          <li class="header-search-child-list__item">
+                            <a class="header-search-child-list__link" target="" rel="" href="/event/search?l_cat=%E6%BC%94%E5%8A%87%E3%83%BB%E3%82%B9%E3%83%86%E3%83%BC%E3%82%B8&amp;s_cat=%E8%88%9E%E5%8F%B0">舞台</a>
+                          </li>
+                          <li class="header-search-child-list__item">
+                            <a class="header-search-child-list__link" target="" rel="" href="/event/search?l_cat=%E6%BC%94%E5%8A%87%E3%83%BB%E3%82%B9%E3%83%86%E3%83%BC%E3%82%B8&amp;s_cat=%E6%BC%94%E5%8A%87">演劇</a>
+                          </li>
+                          <li class="header-search-child-list__item">
+                            <a class="header-search-child-list__link" target="" rel="" href="/event/search?l_cat=%E6%BC%94%E5%8A%87%E3%83%BB%E3%82%B9%E3%83%86%E3%83%BC%E3%82%B8&amp;s_cat=%E8%90%BD%E8%AA%9E">落語</a>
+                          </li>
+                          <li class="header-search-child-list__item">
+                            <a class="header-search-child-list__link" target="" rel="" href="/event/search?l_cat=%E6%BC%94%E5%8A%87%E3%83%BB%E3%82%B9%E3%83%86%E3%83%BC%E3%82%B8&amp;s_cat=%E4%BC%9D%E7%B5%B1%E8%8A%B8%E8%83%BD">伝統芸能</a>
+                          </li>
+                          <li class="header-search-child-list__item">
+                            <a class="header-search-child-list__link" target="" rel="" href="/event/search?l_cat=%E6%BC%94%E5%8A%87%E3%83%BB%E3%82%B9%E3%83%86%E3%83%BC%E3%82%B8&amp;s_cat=%E3%81%8A%E7%AC%91%E3%81%84">お笑い</a>
+                          </li>
+                          <li class="header-search-child-list__item">
+                            <a class="header-search-child-list__link" target="" rel="" href="/event/search?l_cat=%E6%BC%94%E5%8A%87%E3%83%BB%E3%82%B9%E3%83%86%E3%83%BC%E3%82%B8&amp;s_cat=%E3%83%A2%E3%83%8E%E3%83%9E%E3%83%8D">モノマネ</a>
+                          </li>
+                          <li class="header-search-child-list__item">
+                            <a class="header-search-child-list__link" target="" rel="" href="/event/search?l_cat=%E6%BC%94%E5%8A%87%E3%83%BB%E3%82%B9%E3%83%86%E3%83%BC%E3%82%B8&amp;s_cat=%E3%83%80%E3%83%B3%E3%82%B9">ダンス</a>
+                          </li>
+                          <li class="header-search-child-list__item">
+                            <a class="header-search-child-list__link" target="" rel="" href="/event/search?l_cat=%E6%BC%94%E5%8A%87%E3%83%BB%E3%82%B9%E3%83%86%E3%83%BC%E3%82%B8&amp;s_cat=%E6%BC%94%E5%8A%87%E3%83%BB%E3%82%B9%E3%83%86%E3%83%BC%E3%82%B8%E3%81%9D%E3%81%AE%E4%BB%96">演劇・ステージその他</a>
+                          </li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="header-search-list__item js-toggle">
+                    <button type="button" id="hd_03_tgl" class="header-search-list__toggle js-toggle-trigger" aria-controls="hd_03_pnl" aria-expanded="false" data-action="click->toggle#open">ファン・アイドル</button>
+
+                    <div id="hd_03_pnl" class="header-search-list__panel js-toggle-panel" aria-labelledby="hd_03_tgl">
+                      <ul class="header-search-child-list">
+                        <li class="header-search-child-list__item">
+                          <a class="header-search-child-list__link" target="" rel="" href="/event/search?l_cat=%E3%83%95%E3%82%A1%E3%83%B3%E3%83%BB%E3%82%A2%E3%82%A4%E3%83%89%E3%83%AB">ファン・アイドルすべて</a>
+                        </li>
+                          <li class="header-search-child-list__item">
+                            <a class="header-search-child-list__link" target="" rel="" href="/event/search?l_cat=%E3%83%95%E3%82%A1%E3%83%B3%E3%83%BB%E3%82%A2%E3%82%A4%E3%83%89%E3%83%AB&amp;s_cat=%E3%83%95%E3%82%A1%E3%83%B3%E3%83%9F%E3%83%BC%E3%83%86%E3%82%A3%E3%83%B3%E3%82%B0">ファンミーティング</a>
+                          </li>
+                          <li class="header-search-child-list__item">
+                            <a class="header-search-child-list__link" target="" rel="" href="/event/search?l_cat=%E3%83%95%E3%82%A1%E3%83%B3%E3%83%BB%E3%82%A2%E3%82%A4%E3%83%89%E3%83%AB&amp;s_cat=%E6%8F%A1%E6%89%8B%E4%BC%9A">握手会</a>
+                          </li>
+                          <li class="header-search-child-list__item">
+                            <a class="header-search-child-list__link" target="" rel="" href="/event/search?l_cat=%E3%83%95%E3%82%A1%E3%83%B3%E3%83%BB%E3%82%A2%E3%82%A4%E3%83%89%E3%83%AB&amp;s_cat=%E5%B1%95%E8%A6%A7%E4%BC%9A">展覧会</a>
+                          </li>
+                          <li class="header-search-child-list__item">
+                            <a class="header-search-child-list__link" target="" rel="" href="/event/search?l_cat=%E3%83%95%E3%82%A1%E3%83%B3%E3%83%BB%E3%82%A2%E3%82%A4%E3%83%89%E3%83%AB&amp;s_cat=%E6%92%AE%E5%BD%B1%E4%BC%9A">撮影会</a>
+                          </li>
+                          <li class="header-search-child-list__item">
+                            <a class="header-search-child-list__link" target="" rel="" href="/event/search?l_cat=%E3%83%95%E3%82%A1%E3%83%B3%E3%83%BB%E3%82%A2%E3%82%A4%E3%83%89%E3%83%AB&amp;s_cat=%E3%83%88%E3%83%BC%E3%82%AF%E3%82%B7%E3%83%A7%E3%83%BC">トークショー</a>
+                          </li>
+                          <li class="header-search-child-list__item">
+                            <a class="header-search-child-list__link" target="" rel="" href="/event/search?l_cat=%E3%83%95%E3%82%A1%E3%83%B3%E3%83%BB%E3%82%A2%E3%82%A4%E3%83%89%E3%83%AB&amp;s_cat=%E3%83%A9%E3%82%A4%E3%83%96">ライブ</a>
+                          </li>
+                          <li class="header-search-child-list__item">
+                            <a class="header-search-child-list__link" target="" rel="" href="/event/search?l_cat=%E3%83%95%E3%82%A1%E3%83%B3%E3%83%BB%E3%82%A2%E3%82%A4%E3%83%89%E3%83%AB&amp;s_cat=%E3%82%B0%E3%83%83%E3%82%BA">グッズ</a>
+                          </li>
+                          <li class="header-search-child-list__item">
+                            <a class="header-search-child-list__link" target="" rel="" href="/event/search?l_cat=%E3%83%95%E3%82%A1%E3%83%B3%E3%83%BB%E3%82%A2%E3%82%A4%E3%83%89%E3%83%AB&amp;s_cat=%E3%83%95%E3%82%A1%E3%83%B3%E3%83%BB%E3%82%A2%E3%82%A4%E3%83%89%E3%83%AB%E3%81%9D%E3%81%AE%E4%BB%96">ファン・アイドルその他</a>
+                          </li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="header-search-list__item js-toggle">
+                    <button type="button" id="hd_04_tgl" class="header-search-list__toggle js-toggle-trigger" aria-controls="hd_04_pnl" aria-expanded="false" data-action="click->toggle#open">アニメ・キャラ</button>
+
+                    <div id="hd_04_pnl" class="header-search-list__panel js-toggle-panel" aria-labelledby="hd_04_tgl">
+                      <ul class="header-search-child-list">
+                        <li class="header-search-child-list__item">
+                          <a class="header-search-child-list__link" target="" rel="" href="/event/search?l_cat=%E3%82%A2%E3%83%8B%E3%83%A1%E3%83%BB%E3%82%AD%E3%83%A3%E3%83%A9">アニメ・キャラすべて</a>
+                        </li>
+                          <li class="header-search-child-list__item">
+                            <a class="header-search-child-list__link" target="" rel="" href="/event/search?l_cat=%E3%82%A2%E3%83%8B%E3%83%A1%E3%83%BB%E3%82%AD%E3%83%A3%E3%83%A9&amp;s_cat=%E3%82%B3%E3%83%A9%E3%83%9C%E3%82%AB%E3%83%95%E3%82%A7">コラボカフェ</a>
+                          </li>
+                          <li class="header-search-child-list__item">
+                            <a class="header-search-child-list__link" target="" rel="" href="/event/search?l_cat=%E3%82%A2%E3%83%8B%E3%83%A1%E3%83%BB%E3%82%AD%E3%83%A3%E3%83%A9&amp;s_cat=%E5%B1%95%E8%A6%A7%E4%BC%9A">展覧会</a>
+                          </li>
+                          <li class="header-search-child-list__item">
+                            <a class="header-search-child-list__link" target="" rel="" href="/event/search?l_cat=%E3%82%A2%E3%83%8B%E3%83%A1%E3%83%BB%E3%82%AD%E3%83%A3%E3%83%A9&amp;s_cat=%E3%82%B0%E3%83%83%E3%82%BA">グッズ</a>
+                          </li>
+                          <li class="header-search-child-list__item">
+                            <a class="header-search-child-list__link" target="" rel="" href="/event/search?l_cat=%E3%82%A2%E3%83%8B%E3%83%A1%E3%83%BB%E3%82%AD%E3%83%A3%E3%83%A9&amp;s_cat=%E3%82%A2%E3%83%8B%E3%83%A1%E3%83%BB%E3%82%AD%E3%83%A3%E3%83%A9%E3%81%9D%E3%81%AE%E4%BB%96">アニメ・キャラその他</a>
+                          </li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="header-search-list__item js-toggle">
+                    <button type="button" id="hd_05_tgl" class="header-search-list__toggle js-toggle-trigger" aria-controls="hd_05_pnl" aria-expanded="false" data-action="click->toggle#open">スポーツ</button>
+
+                    <div id="hd_05_pnl" class="header-search-list__panel js-toggle-panel" aria-labelledby="hd_05_tgl">
+                      <ul class="header-search-child-list">
+                        <li class="header-search-child-list__item">
+                          <a class="header-search-child-list__link" target="" rel="" href="/event/search?l_cat=%E3%82%B9%E3%83%9D%E3%83%BC%E3%83%84">スポーツすべて</a>
+                        </li>
+                          <li class="header-search-child-list__item">
+                            <a class="header-search-child-list__link" target="" rel="" href="/event/search?l_cat=%E3%82%B9%E3%83%9D%E3%83%BC%E3%83%84&amp;s_cat=%E9%87%8E%E7%90%83">野球</a>
+                          </li>
+                          <li class="header-search-child-list__item">
+                            <a class="header-search-child-list__link" target="" rel="" href="/event/search?l_cat=%E3%82%B9%E3%83%9D%E3%83%BC%E3%83%84&amp;s_cat=%E3%82%B5%E3%83%83%E3%82%AB%E3%83%BC">サッカー</a>
+                          </li>
+                          <li class="header-search-child-list__item">
+                            <a class="header-search-child-list__link" target="" rel="" href="/event/search?l_cat=%E3%82%B9%E3%83%9D%E3%83%BC%E3%83%84&amp;s_cat=%E3%83%A9%E3%82%B0%E3%83%93%E3%83%BC">ラグビー</a>
+                          </li>
+                          <li class="header-search-child-list__item">
+                            <a class="header-search-child-list__link" target="" rel="" href="/event/search?l_cat=%E3%82%B9%E3%83%9D%E3%83%BC%E3%83%84&amp;s_cat=%E3%83%90%E3%83%AC%E3%83%BC%E3%83%9C%E3%83%BC%E3%83%AB">バレーボール</a>
+                          </li>
+                          <li class="header-search-child-list__item">
+                            <a class="header-search-child-list__link" target="" rel="" href="/event/search?l_cat=%E3%82%B9%E3%83%9D%E3%83%BC%E3%83%84&amp;s_cat=%E3%83%97%E3%83%AD%E3%83%AC%E3%82%B9">プロレス</a>
+                          </li>
+                          <li class="header-search-child-list__item">
+                            <a class="header-search-child-list__link" target="" rel="" href="/event/search?l_cat=%E3%82%B9%E3%83%9D%E3%83%BC%E3%83%84&amp;s_cat=%E3%83%9C%E3%82%AF%E3%82%B7%E3%83%B3%E3%82%B0">ボクシング</a>
+                          </li>
+                          <li class="header-search-child-list__item">
+                            <a class="header-search-child-list__link" target="" rel="" href="/event/search?l_cat=%E3%82%B9%E3%83%9D%E3%83%BC%E3%83%84&amp;s_cat=%E6%A0%BC%E9%97%98%E6%8A%80">格闘技</a>
+                          </li>
+                          <li class="header-search-child-list__item">
+                            <a class="header-search-child-list__link" target="" rel="" href="/event/search?l_cat=%E3%82%B9%E3%83%9D%E3%83%BC%E3%83%84&amp;s_cat=e%E3%82%B9%E3%83%9D%E3%83%BC%E3%83%84">eスポーツ</a>
+                          </li>
+                          <li class="header-search-child-list__item">
+                            <a class="header-search-child-list__link" target="" rel="" href="/event/search?l_cat=%E3%82%B9%E3%83%9D%E3%83%BC%E3%83%84&amp;s_cat=%E3%83%8F%E3%83%B3%E3%83%89%E3%83%9C%E3%83%BC%E3%83%AB">ハンドボール</a>
+                          </li>
+                          <li class="header-search-child-list__item">
+                            <a class="header-search-child-list__link" target="" rel="" href="/event/search?l_cat=%E3%82%B9%E3%83%9D%E3%83%BC%E3%83%84&amp;s_cat=%E3%83%90%E3%82%B9%E3%82%B1%E3%83%83%E3%83%88%E3%83%9C%E3%83%BC%E3%83%AB">バスケットボール</a>
+                          </li>
+                          <li class="header-search-child-list__item">
+                            <a class="header-search-child-list__link" target="" rel="" href="/event/search?l_cat=%E3%82%B9%E3%83%9D%E3%83%BC%E3%83%84&amp;s_cat=%E3%82%B9%E3%83%9D%E3%83%BC%E3%83%84%E3%81%9D%E3%81%AE%E4%BB%96">スポーツその他</a>
+                          </li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="header-search-list__item js-toggle">
+                    <button type="button" id="hd_06_tgl" class="header-search-list__toggle js-toggle-trigger" aria-controls="hd_06_pnl" aria-expanded="false" data-action="click->toggle#open">趣味・カルチャー・レジャー</button>
+
+                    <div id="hd_06_pnl" class="header-search-list__panel js-toggle-panel" aria-labelledby="hd_06_tgl">
+                      <ul class="header-search-child-list">
+                        <li class="header-search-child-list__item">
+                          <a class="header-search-child-list__link" target="" rel="" href="/event/search?l_cat=%E8%B6%A3%E5%91%B3%E3%83%BB%E3%82%AB%E3%83%AB%E3%83%81%E3%83%A3%E3%83%BC%E3%83%BB%E3%83%AC%E3%82%B8%E3%83%A3%E3%83%BC">趣味・カルチャー・レジャーすべて</a>
+                        </li>
+                          <li class="header-search-child-list__item">
+                            <a class="header-search-child-list__link" target="" rel="" href="/event/search?l_cat=%E8%B6%A3%E5%91%B3%E3%83%BB%E3%82%AB%E3%83%AB%E3%83%81%E3%83%A3%E3%83%BC%E3%83%BB%E3%83%AC%E3%82%B8%E3%83%A3%E3%83%BC&amp;s_cat=%E3%83%A8%E3%82%AC%E3%83%BB%E3%83%95%E3%82%A3%E3%83%83%E3%83%88%E3%83%8D%E3%82%B9">ヨガ・フィットネス</a>
+                          </li>
+                          <li class="header-search-child-list__item">
+                            <a class="header-search-child-list__link" target="" rel="" href="/event/search?l_cat=%E8%B6%A3%E5%91%B3%E3%83%BB%E3%82%AB%E3%83%AB%E3%83%81%E3%83%A3%E3%83%BC%E3%83%BB%E3%83%AC%E3%82%B8%E3%83%A3%E3%83%BC&amp;s_cat=%E3%82%B8%E3%83%A0">ジム</a>
+                          </li>
+                          <li class="header-search-child-list__item">
+                            <a class="header-search-child-list__link" target="" rel="" href="/event/search?l_cat=%E8%B6%A3%E5%91%B3%E3%83%BB%E3%82%AB%E3%83%AB%E3%83%81%E3%83%A3%E3%83%BC%E3%83%BB%E3%83%AC%E3%82%B8%E3%83%A3%E3%83%BC&amp;s_cat=%E5%8B%95%E7%89%A9%E5%9C%92">動物園</a>
+                          </li>
+                          <li class="header-search-child-list__item">
+                            <a class="header-search-child-list__link" target="" rel="" href="/event/search?l_cat=%E8%B6%A3%E5%91%B3%E3%83%BB%E3%82%AB%E3%83%AB%E3%83%81%E3%83%A3%E3%83%BC%E3%83%BB%E3%83%AC%E3%82%B8%E3%83%A3%E3%83%BC&amp;s_cat=%E6%B0%B4%E6%97%8F%E9%A4%A8">水族館</a>
+                          </li>
+                          <li class="header-search-child-list__item">
+                            <a class="header-search-child-list__link" target="" rel="" href="/event/search?l_cat=%E8%B6%A3%E5%91%B3%E3%83%BB%E3%82%AB%E3%83%AB%E3%83%81%E3%83%A3%E3%83%BC%E3%83%BB%E3%83%AC%E3%82%B8%E3%83%A3%E3%83%BC&amp;s_cat=%E3%82%AB%E3%83%BC%E3%83%89%E3%82%B2%E3%83%BC%E3%83%A0">カードゲーム</a>
+                          </li>
+                          <li class="header-search-child-list__item">
+                            <a class="header-search-child-list__link" target="" rel="" href="/event/search?l_cat=%E8%B6%A3%E5%91%B3%E3%83%BB%E3%82%AB%E3%83%AB%E3%83%81%E3%83%A3%E3%83%BC%E3%83%BB%E3%83%AC%E3%82%B8%E3%83%A3%E3%83%BC&amp;s_cat=%E3%82%B2%E3%83%BC%E3%83%A0">ゲーム</a>
+                          </li>
+                          <li class="header-search-child-list__item">
+                            <a class="header-search-child-list__link" target="" rel="" href="/event/search?l_cat=%E8%B6%A3%E5%91%B3%E3%83%BB%E3%82%AB%E3%83%AB%E3%83%81%E3%83%A3%E3%83%BC%E3%83%BB%E3%83%AC%E3%82%B8%E3%83%A3%E3%83%BC&amp;s_cat=%E9%87%A3%E3%82%8A">釣り</a>
+                          </li>
+                          <li class="header-search-child-list__item">
+                            <a class="header-search-child-list__link" target="" rel="" href="/event/search?l_cat=%E8%B6%A3%E5%91%B3%E3%83%BB%E3%82%AB%E3%83%AB%E3%83%81%E3%83%A3%E3%83%BC%E3%83%BB%E3%83%AC%E3%82%B8%E3%83%A3%E3%83%BC&amp;s_cat=%E8%84%B1%E5%87%BA%E3%82%B2%E3%83%BC%E3%83%A0">脱出ゲーム</a>
+                          </li>
+                          <li class="header-search-child-list__item">
+                            <a class="header-search-child-list__link" target="" rel="" href="/event/search?l_cat=%E8%B6%A3%E5%91%B3%E3%83%BB%E3%82%AB%E3%83%AB%E3%83%81%E3%83%A3%E3%83%BC%E3%83%BB%E3%83%AC%E3%82%B8%E3%83%A3%E3%83%BC&amp;s_cat=%E3%83%80%E3%83%B3%E3%82%B9">ダンス</a>
+                          </li>
+                          <li class="header-search-child-list__item">
+                            <a class="header-search-child-list__link" target="" rel="" href="/event/search?l_cat=%E8%B6%A3%E5%91%B3%E3%83%BB%E3%82%AB%E3%83%AB%E3%83%81%E3%83%A3%E3%83%BC%E3%83%BB%E3%83%AC%E3%82%B8%E3%83%A3%E3%83%BC&amp;s_cat=%E3%83%95%E3%82%A1%E3%83%83%E3%82%B7%E3%83%A7%E3%83%B3%E3%83%BB%E7%BE%8E%E5%AE%B9">ファッション・美容</a>
+                          </li>
+                          <li class="header-search-child-list__item">
+                            <a class="header-search-child-list__link" target="" rel="" href="/event/search?l_cat=%E8%B6%A3%E5%91%B3%E3%83%BB%E3%82%AB%E3%83%AB%E3%83%81%E3%83%A3%E3%83%BC%E3%83%BB%E3%83%AC%E3%82%B8%E3%83%A3%E3%83%BC&amp;s_cat=%E3%82%B3%E3%82%B9%E3%83%97%E3%83%AC">コスプレ</a>
+                          </li>
+                          <li class="header-search-child-list__item">
+                            <a class="header-search-child-list__link" target="" rel="" href="/event/search?l_cat=%E8%B6%A3%E5%91%B3%E3%83%BB%E3%82%AB%E3%83%AB%E3%83%81%E3%83%A3%E3%83%BC%E3%83%BB%E3%83%AC%E3%82%B8%E3%83%A3%E3%83%BC&amp;s_cat=%E8%B6%A3%E5%91%B3%E3%83%BB%E3%82%AB%E3%83%AB%E3%83%81%E3%83%A3%E3%83%BC%E3%83%BB%E3%83%AC%E3%82%B8%E3%83%A3%E3%83%BC%E3%81%9D%E3%81%AE%E4%BB%96">趣味・カルチャー・レジャーその他</a>
+                          </li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="header-search-list__item js-toggle">
+                    <button type="button" id="hd_07_tgl" class="header-search-list__toggle js-toggle-trigger" aria-controls="hd_07_pnl" aria-expanded="false" data-action="click->toggle#open">展覧会・イベント</button>
+
+                    <div id="hd_07_pnl" class="header-search-list__panel js-toggle-panel" aria-labelledby="hd_07_tgl">
+                      <ul class="header-search-child-list">
+                        <li class="header-search-child-list__item">
+                          <a class="header-search-child-list__link" target="" rel="" href="/event/search?l_cat=%E5%B1%95%E8%A6%A7%E4%BC%9A%E3%83%BB%E3%82%A4%E3%83%99%E3%83%B3%E3%83%88">展覧会・イベントすべて</a>
+                        </li>
+                          <li class="header-search-child-list__item">
+                            <a class="header-search-child-list__link" target="" rel="" href="/event/search?l_cat=%E5%B1%95%E8%A6%A7%E4%BC%9A%E3%83%BB%E3%82%A4%E3%83%99%E3%83%B3%E3%83%88&amp;s_cat=%E7%89%A9%E7%94%A3%E5%B1%95">物産展</a>
+                          </li>
+                          <li class="header-search-child-list__item">
+                            <a class="header-search-child-list__link" target="" rel="" href="/event/search?l_cat=%E5%B1%95%E8%A6%A7%E4%BC%9A%E3%83%BB%E3%82%A4%E3%83%99%E3%83%B3%E3%83%88&amp;s_cat=%E5%B1%95%E8%A6%A7%E4%BC%9A">展覧会</a>
+                          </li>
+                          <li class="header-search-child-list__item">
+                            <a class="header-search-child-list__link" target="" rel="" href="/event/search?l_cat=%E5%B1%95%E8%A6%A7%E4%BC%9A%E3%83%BB%E3%82%A4%E3%83%99%E3%83%B3%E3%83%88&amp;s_cat=%E3%81%8A%E7%A5%AD%E3%82%8A">お祭り</a>
+                          </li>
+                          <li class="header-search-child-list__item">
+                            <a class="header-search-child-list__link" target="" rel="" href="/event/search?l_cat=%E5%B1%95%E8%A6%A7%E4%BC%9A%E3%83%BB%E3%82%A4%E3%83%99%E3%83%B3%E3%83%88&amp;s_cat=%E8%8A%B1%E7%81%AB%E5%A4%A7%E4%BC%9A">花火大会</a>
+                          </li>
+                          <li class="header-search-child-list__item">
+                            <a class="header-search-child-list__link" target="" rel="" href="/event/search?l_cat=%E5%B1%95%E8%A6%A7%E4%BC%9A%E3%83%BB%E3%82%A4%E3%83%99%E3%83%B3%E3%83%88&amp;s_cat=%E8%A1%97%E3%82%B3%E3%83%B3">街コン</a>
+                          </li>
+                          <li class="header-search-child-list__item">
+                            <a class="header-search-child-list__link" target="" rel="" href="/event/search?l_cat=%E5%B1%95%E8%A6%A7%E4%BC%9A%E3%83%BB%E3%82%A4%E3%83%99%E3%83%B3%E3%83%88&amp;s_cat=%E3%82%BB%E3%83%9F%E3%83%8A%E3%83%BC">セミナー</a>
+                          </li>
+                          <li class="header-search-child-list__item">
+                            <a class="header-search-child-list__link" target="" rel="" href="/event/search?l_cat=%E5%B1%95%E8%A6%A7%E4%BC%9A%E3%83%BB%E3%82%A4%E3%83%99%E3%83%B3%E3%83%88&amp;s_cat=%E9%A3%9F%E3%83%95%E3%82%A7%E3%82%B9">食フェス</a>
+                          </li>
+                          <li class="header-search-child-list__item">
+                            <a class="header-search-child-list__link" target="" rel="" href="/event/search?l_cat=%E5%B1%95%E8%A6%A7%E4%BC%9A%E3%83%BB%E3%82%A4%E3%83%99%E3%83%B3%E3%83%88&amp;s_cat=%E3%82%A2%E3%83%BC%E3%83%88">アート</a>
+                          </li>
+                          <li class="header-search-child-list__item">
+                            <a class="header-search-child-list__link" target="" rel="" href="/event/search?l_cat=%E5%B1%95%E8%A6%A7%E4%BC%9A%E3%83%BB%E3%82%A4%E3%83%99%E3%83%B3%E3%83%88&amp;s_cat=%E5%AD%A6%E5%9C%92%E7%A5%AD">学園祭</a>
+                          </li>
+                          <li class="header-search-child-list__item">
+                            <a class="header-search-child-list__link" target="" rel="" href="/event/search?l_cat=%E5%B1%95%E8%A6%A7%E4%BC%9A%E3%83%BB%E3%82%A4%E3%83%99%E3%83%B3%E3%83%88&amp;s_cat=%E3%83%88%E3%83%BC%E3%82%AF%E3%82%B7%E3%83%A7%E3%83%BC">トークショー</a>
+                          </li>
+                          <li class="header-search-child-list__item">
+                            <a class="header-search-child-list__link" target="" rel="" href="/event/search?l_cat=%E5%B1%95%E8%A6%A7%E4%BC%9A%E3%83%BB%E3%82%A4%E3%83%99%E3%83%B3%E3%83%88&amp;s_cat=%E5%B1%95%E8%A6%A7%E4%BC%9A%E3%83%BB%E3%82%A4%E3%83%99%E3%83%B3%E3%83%88%E3%81%9D%E3%81%AE%E4%BB%96">展覧会・イベントその他</a>
+                          </li>
+                      </ul>
+                    </div>
+                  </li>
+              </ul>
             </div>
-      <p class="elTxt">受付の係員に画面を提示してください<br>
-    一度受付すると元に戻せません</p>
-      <div id="psmCheckinPostButtonA-39" class="elBtn" style="display:none;">
-        <p class="libButton elGray sizL">受付しました</p>
-      </div>
-            <div class="checkinPreButton elBtn">
-        <a href="javascript:void(0);" class="libButton elDeepGray sizL">係員が対応します</a>
-      </div>
-      <div class="checkinWrap ptsSlideBtn" id="psmCheckinWrapA-39" style="display:none">
-        <div class="well">
-          <div class="elReceive" style="width:100%">
-          <span style="z-index: 2; position: relative;" class="checkinButton slider ui-draggable ui-draggable-handle" data-index="1" id="checkinButtonA-39" value="SO7Y_fgO5GMexmR0zISWcCCuO3Z7lUOqniYA1VHXZutZWrnv92MDBmCqZyls7rMBxaXGnPQ2BLSGroCV" name="A-39"></span>
-          <span id="checkinMsgA-39" class="decTxt">受付する</span>
           </div>
-        </div>
-      </div>
-          </div>
- </div>
- <div class="ptsBuyer">
-  <p class="decMb5">ZHANG YUN</p>
-    <p class="decMb5">購入日：2026年05月27日</p>
-        </div>
-</div> <!-- dspTransferBefore -->
- </div>
-</div></div>
-<div class="ptsNotesWrap" style="display:none;">
-  </div><!-- /ptsNotesWrap -->
-<div style="clear:both;"></div>
+        </li>
 
-</div>
-</div>
-</section><!-- /ypMdTicketInfo -->
-<!-- /ticketInfo -->
-</div>
-<!-- /#content -->
+          <li class="header-nav__item">
+            <button type="button" class="header-nav__link header-nav__link--menu js-header-menu-trigger" aria-expanded="false" data-target="#account" data-action="click->header#menuopen">
+              <span class="header-nav__open">
+                メニュー
+                  <span>通知あり</span>
+              </span>
+              <span class="header-nav__close">閉じる</span>
+            </button>
 
+            <!-- アカウントメニュー -->
+            <nav id="account" class="header-menu js-header-menu" aria-label="アカウントメニュー">
+              <div class="header-account">
+                <div class="header-account__inner">
+                  <p class="header-account__name">
+                    <span data-wovn-ignore>CHEN SHENGNAN ￻</span>
+                    様
+                  </p>
 
-<div id="dialog-form" style="display:none">
-  <form>
-  <div class="ypMdClosedEvent">
-    <div class="ptsPwInput">
-      <dl>
-        <dt>指定のコードを入力してください</dt>
-      </dl>
-    </div>
-    <div class="ptsNumInput">
-      <div class="libForm">
-        <div class="ptsFormWr">
-          <input id="acceptionCode" type="number" value="">
-        </div>
-      </div>
-    </div>
+                  <ul class="header-account-list">
+                    <li class="header-account-list__item">
+                      <a class="header-account-list__link header-account-list__link--top" target="" rel="" href="/my_top">マイトップ</a>
+                    </li>
+                    <li class="header-account-list__item">
+                      <a class="header-account-list__link header-account-list__link--ticket" target="" rel="" href="/mytickets">
+                        マイチケット
+                          <span class="header-account-list__number">2</span>
+</a>                    </li>
+                    <li class="header-account-list__item">
+                      <a class="header-account-list__link header-account-list__link--history" target="" rel="" href="/purchase_histories">申込状況・履歴</a>
+                    </li>
+                    <li class="header-account-list__item">
+                      <a class="header-account-list__link header-account-list__link--favorite" target="" rel="" href="/favorites">お気に入り</a>
+                    </li>
+                    <li class="header-account-list__item">
+                      <a class="header-account-list__link header-account-list__link--news" target="" rel="" href="/notifications">
+                        お知らせ
+                          <span class="header-account-list__number" id="unread_notifications_number">99+</span>
+</a>                    </li>
+                    <li class="header-account-list__item">
+                      <a class="header-account-list__link header-account-list__link--inquiry" target="" rel="" href="/promoter_inquiries">
+                        販売元へのお問い合わせ
+</a>                    </li>
+                    <li class="header-account-list__item">
+                      <a class="header-account-list__link header-account-list__link--setting" target="" rel="" href="/account">アカウント設定</a>
+                    </li>
+                    <li class="header-account-list__item">
+                      <a class="header-account-list__link header-account-list__link--mail" target="" rel="" href="/account/newsletter">メール配信設定</a>
+                    </li>
+                    <li class="header-account-list__item">
+                      <a class="header-account-list__link header-account-list__link--login-history" target="" rel="" href="/account/login_histories">ログイン履歴</a>
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="header-account-logout">
+                  <button type="button" class="header-account-logout__link js-modal-trigger" data-target="#modalHeaderLogout" data-action="click->target_modal#modalShow" data-turbo="false">ログアウト</button>
+                </div>
+              </div>
+            </nav>
+          </li>
+      </ul>
+    </nav>
+
+    <div class="header-overlay js-header-overlay" data-action="click->header#overlay"></div>
   </div>
-  </form>
-</div>
 
-<section class="ypMdDialogue decGuestPur" id="guestDialog" style="display:none; position:absolute; top:0; left:0;height:1150px;">
-
-<div class="window" style="margin-top:50px;">
-
-<div class="untHead">
-<p class="elLead">お持ちのスマートフォンに<br>メール送信しましょう</p>
-</div>
-
-<div class="untBody">
-<p class="elTxt"></p>
-</div>
-
-<div class="untFoot">
-<ul>
-<li><span><a id="closeGuestDialog" class="libButton elFunk sizM" href="javascript:void(0);">閉じる</a></span></li>
-</ul>
-</div>
-
-</div><!-- /window -->
-</section><!-- /ypMdDialogue -->
-
-<section class="ypMdTicketCollect" style="display:none; height: 2000px;">
-<div class="elFixed">
-<header class="libLabel sizM decMb20">
-<h2 class="elTitle">このチケットを友達に贈る</h2>
+  <dialog id="modalHeaderLogout" class="modal modal--dialog js-modal" aria-label="ログアウトの確認ダイアログ" data-modal-target="dialog" data-action="click->target_modal#overlay">
+    <div class="modal__inner js-modal-content">
+      <button type="button" class="modal__close js-modal-close" data-action="click->target_modal#modalClose">閉じる</button>
+      <div class="modal__content">
+        <p class="modal__title">ログアウトします。<br class="only-sp" />よろしいですか？</p>
+      </div>
+      <div class="modal__bottom">
+        <div class="modal-button-box">
+          <div class="modal-button-box__item">
+            <button type="button" class="button-secondary button-secondary--full js-modal-close" data-action="click->target_modal#modalClose">戻る</button>
+          </div>
+          <div class="modal-button-box__item">
+            <form class="button_to" method="post" action="/logout"><button data-turbo="false" class="button-primary button-primary--full" type="submit">ログアウト</button><input type="hidden" name="authenticity_token" value="YfweZoSg5zssOS987UgFU3HQgyzOZoWCeUh7sZZAYSVOTUqC6z23OqjhQmGt9722vjWpM83qKeYO8yiHZMSqpA" autocomplete="off" /></form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </dialog>
 </header>
 
-<div class="ptsPdfMenu btnGroupTransfer btnHandleTransfer">
-<ul>
-<li><p class="elMail btnHandleGroupTransferEmail"><a href="javascript:void(0);">メール</a></p></li>
-</ul>
-</div>
-</div>
-</section></div>
+      
+<main id="main" class="main">
+  <!-- #### ly-container start #### -->
+  <div class="ly-container">
+    <section class="my-ticket">
+      <div class="my-ticket__content">
+        <!-- ### 印刷ボタン（PCのみ） start ### -->
+        <div class="my-ticket-print only-pc">
+          <p class="my-ticket-print__text">このページを印刷できます</p>
+          <button type="button" class="button-function-secondary" onclick="window.print(); return false;"><span class="icon-print"></span>印刷する</button>
+        </div>
+        <!-- ### 印刷ボタン（PCのみ） start ### -->
 
-<!-- /ticketInfoCollect -->
+        <!-- ### チケット情報 start ### -->
+        <div class="my-ticket-info">
+          <div class="my-ticket-info__block">
+            <!-- QRコード -->
+            <div class="my-ticket-qr color03">
+              <div class="my-ticket-qr__inner">
+                <div class="my-ticket-qr__image">
+                  <img data-controller="qrcode" data-qrcode-target="qrcode" data-text="UYb4ozxVubY93dA1YFvb8MIEzVrDCkY/00IW49yO10Ttp7BLmXM03TGsmKbtGlOZ" alt="QRコード" width="200" height="200" loading="lazy" src="" />
+                </div>
+              </div>
+            </div>
+            <div class="my-ticket-info__content">
+              <div class="my-ticket-info__box">
+                <span class="my-ticket-info__name"><span class="my-ticket-info__name-title">氏</span>CHEN SHENGNAN<span class="my-ticket-info__name-title">名</span>￻ </span>
+              </div>
 
-<!-- JavaScript -->
-<script type="text/javascript">
-<!--
-YAHOO.JP.passmarket.kakao_url = "";
-YAHOO.JP.passmarket.kakao_appid = "passmarket.yahoo.co.jp";
-YAHOO.JP.passmarket.loadimage_url = "https://s.yimg.jp/images/passmarket/smartphone/front/image/1.0.0/ico_loading_01.gif";
-YAHOO.JP.passmarket.checkin_url = "https://ticketRepository.github.io/yahooo.github.io/response.html?client=web_buyer";
-YAHOO.JP.passmarket.crumb  = "NGFjNjlhZmI5MGExY0t5AiMIc-GC24nyyV1zBFY2KrbZmypEgQqlaXHmtfMyBU0CM18q7miUU6sfi74VsXKFNRo8uSjI90GJqPzJ_UQ_G7Dkd7uPnispn0u1tM-8ONA0WVpsLBHDzqeNPwUQe8YCw29Cv6P9st6q5l4ddgVanSn-FI8NaRFLQIzs978kPSS5Qxau8wKfR6dMdea7gCCHJ1fQJ7dDwTiXk1QHNa2sYNUtfRx_LjM";
-YAHOO.JP.passmarket.order_id = "02155WV6QR2EC";
-YAHOO.JP.passmarket.show_guest_dialog = "0";
-YAHOO.JP.passmarket.use_acception_code = "0";
-YAHOO.JP.passmarket.load_digishot = "0";
-YAHOO.JP.passmarket.digishot_url = "https://passmarket.yahoo.co.jp/my/ticket/digishot";
-YAHOO.JP.passmarket.checkin_audio_src = "https://s.yimg.jp/images/passmarket/audio/checkin.mp3";
-YAHOO.JP.passmarket.checkin_image_url = "https://s.yimg.jp/images/passmarket/smartphone/front/image/1.0.0/ico_settled2x.png";
-YAHOO.JP.passmarket.create_transfer_url  = "https://passmarket.yahoo.co.jp/my/ticket/createtransfer";
-YAHOO.JP.passmarket.cancel_transfer_url  = "https://passmarket.yahoo.co.jp/my/ticket/canceltransfer";
-YAHOO.JP.passmarket.transfer_sys_error   = "システムエラーが発生しました。";
-YAHOO.JP.passmarket.transfer_subject     = "%E3%83%87%E3%82%B8%E3%82%BF%E3%83%AB%E3%83%81%E3%82%B1%E3%83%83%E3%83%88%E3%82%92%EF%BC%91%E6%9E%9A%E3%81%8A%E5%B1%8A%E3%81%91%E3%81%97%E3%81%BE%E3%81%99";
-YAHOO.JP.passmarket.transfer_body        = "%E2%80%BB%E3%83%81%E3%82%B1%E3%83%83%E3%83%88%E3%82%92%E5%8F%97%E3%81%91%E5%8F%96%E3%82%8B%E3%81%93%E3%81%A8%E3%81%A7%E3%80%81%E5%88%A9%E7%94%A8%E8%A6%8F%E7%B4%84%EF%BC%88%20https%3A%2F%2Fyahoo.jp%2FKKFaT1%20%EF%BC%89%E3%81%AB%E5%90%8C%E6%84%8F%E3%81%97%E3%81%9F%E3%82%82%E3%81%AE%E3%81%A8%E3%81%BF%E3%81%AA%E3%81%97%E3%81%BE%E3%81%99%E3%80%82%0D%0A%0D%0A%E2%96%BC%E3%83%81%E3%82%B1%E3%83%83%E3%83%88%E3%82%92%E5%8F%97%E3%81%91%E5%8F%96%E3%82%8B%0D%0A";
-YAHOO.JP.passmarket.transfer_body_footer = "%E2%96%BC%E4%BD%BF%E3%81%84%E6%96%B9%E3%83%BB%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A0%85%0D%0Ahttps%3A%2F%2Fyahoo.jp%2FzAQzQ5%0D%0A%0D%0A%E7%99%BA%E8%A1%8C%EF%BC%9ALINE%E3%83%A4%E3%83%95%E3%83%BC%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BE";
-YAHOO.JP.passmarket.is_receiver = "0";
-YAHOO.JP.passmarket.is_meal_ticket = "0";
+              <h1 class="my-ticket-info__title">11/14(土)抽選ケッ卜※当選番号によって入場時間が異なります。下部をご確認下さい。</h1>
+                <dl class="my-ticket-info__type">
+                  <dt class="my-ticket-info__type-title">整理番号</dt>
+                  <dd class="my-ticket-info__type-data" data-wovn-ignore>A112</dd>
+                </dl>
+              <dl class="my-ticket-info__list">
+                <dt class="my-ticket-info__list-title">チケット番号</dt>
+                <dd class="my-ticket-info__list-data" data-wovn-ignore>N9DJ401RP0CWVY39DTSK</dd>
+              </dl>
+              <dl class="my-ticket-info__list">
+                <dt class="my-ticket-info__list-title">チケット料金</dt>
+                <dd class="my-ticket-info__list-data">¥0（税込）</dd>
+              </dl>
+              <dl class="my-ticket-info__list">
+                <dt class="my-ticket-info__list-title">申込番号</dt>
+                <dd class="my-ticket-info__list-data">1064135731</dd>
+              </dl>
+            </div>
+          </div>
 
+            <p class="my-ticket-info__sub-text">
+              【ご同意事項】<br>●『先着予約入場チケット』をお申し込みされた方は当イベント詳細ページの『注意事項』欄に記載のご案内事項（【1】〜【8】）を全て『ご承諾/ご同意』頂いたものとみなします。<br>●ご来店前に今一度ご案内事項（【1】〜【8】）のご確認をお願いいたします。<br>●ご案内事項をお守り頂けない場合、『先着予約入場チケット』のキャンセルおよび今後のFavoteriA開催のイベントへの参加申込より除外させて頂く可能性がございます。予めご了承下さい。<br>●ご案内事項に変更/更新/修正が発生した際は、FavoteriA公式HPおよび公式Xよりご案内致します。
+            </p>
+        </div>
+        <!-- ### チケット情報 end ### -->
 
-YAHOO.JP.passmarket.is_coupon_book = "0";
-//-->
-</script>
-<!-- JavaScript -->
-<footer id="footer">
-<section class="ypMdFooterDefault">
-<div class="untBody">
-<div class="loginArea">
-<p class="loginName"><a href="https://accounts.yahoo.co.jp/profile?.src=psm&amp;.done=https://passmarket.yahoo.co.jp/my/ticket/sheet%3Forder_id%3D02155WV6QR2EC%26index%3D1">登録情報</a></p><!-- Synchronize display of tablet & smartphone-->
-</div>
-<div class="ptsSNS">
-<p style="margin-bottom:10px;">最新情報をチェック</p>
-<a href="https://blog-passmarket.yahoo.co.jp">お知らせ</a>
-<ul>
-<li><a href="https://twitter.com/YJPassMarket"><img src="https://s.yimg.jp/images/passmarket/smartphone/front/image/1.0.0/ico_sns_01.png" width="35" height="35" alt="Twitter - パスマーケット"></a></li>
-<li><a href="http://www.facebook.com/PassMarket"><img src="https://s.yimg.jp/images/passmarket/smartphone/front/image/1.0.0/ico_sns_02.png" width="35" height="35" alt="Facebook - パスマーケット"></a></li>
-</ul>
-</div>
-<ul class="commonLink">
-<li><a href="https://passmarket.yahoo.co.jp/">PassMarket</a></li>
-<li><a href="https://m.yahoo.co.jp/">Yahoo! JAPAN</a></li>
-</ul>
-<ul class="commonLink">
-<li><a href="https://passmarket.yahoo.co.jp/main/etc/countrycode?cc=jp&amp;done=https%3A%2F%2Fpassmarket.yahoo.co.jp%2Fmy%2Fticket%2Fsheet%3Forder_id%3D02155WV6QR2EC%26index%3D1">日本語</a></li>
-<li><a href="https://passmarket.yahoo.co.jp/main/etc/countrycode?cc=us&amp;done=https%3A%2F%2Fpassmarket.yahoo.co.jp%2Fmy%2Fticket%2Fsheet%3Forder_id%3D02155WV6QR2EC%26index%3D1">English</a></li>
-</ul>
-<ul class="subLink">
-<li><a href="https://www.lycorp.co.jp/ja/company/privacypolicy/">プライバシーポリシー</a></li>
-<li><a href="https://privacy.lycorp.co.jp/ja/">プライバシーセンター</a></li>
-</ul>
-<ul class="subLink elBtm">
-<li><a href="https://www.lycorp.co.jp/ja/company/terms/">規約</a></li>
-<li><a href="https://support.yahoo-net.jp/SccPassmarket/s/">ヘルプ</a></li>
-</ul>
-<ul class="subLink elBtm">
-<li><a href="https://passmarket.yahoo.co.jp/main/html/guideline">主催者ガイドライン</a></li>
-<li><a href="https://passmarket.yahoo.co.jp/main/html/guide">ご利用ガイド</a></li>
-</ul>
-<ul class="subLink elBtm">
-<li><a href="https://passmarket.yahoo.co.jp/tokuteisho/">特定商取引法の表示</a></li>
-</ul>
-<small>写真：アフロ<br>© LY Corporation</small>
-</div>
-</section>
+        <!-- ### イベント情報 start ### -->
+        <section class="my-ticket-summary">
+          <h2 class="my-ticket-summary__title">
+            <a class="my-ticket-summary__link" href="/e/7p9e2">
+              【池袋本館：先着予約：12月3日(木)】『無期迷途』Special Collaboration vol.2
+</a>          </h2>
+
+          <dl class="my-ticket-summary-list">
+            <div class="my-ticket-summary-list__block">
+              <dt class="my-ticket-summary-list__title"><span class="my-ticket-summary-list__date">開催日</span></dt>
+              <dd class="my-ticket-summary-list__data">2026年12月3日(木)<br class="only-sp">〜2026年12月3日(木)</dd>
+            </div>
+
+            <div class="my-ticket-summary-list__block">
+              <dt class="my-ticket-summary-list__title"><span class="my-ticket-summary-list__place">会場</span></dt>
+              <dd class="my-ticket-summary-list__data">
+                FavoteriA池袋本館（東京都）
+              </dd>
+            </div>
+          </dl>
+        </section>
+        <!-- ### イベント情報 end ### -->
+      </div>
+
+      <!-- ### 利用上の注意 start ### -->
+      <section class="my-ticket__notice">
+        <h2 class="heading02">利用上の注意</h2>
+        <ul class="list-dot">
+          <li class="list-dot__item">本チケットは１枚につき、１回限り有効です。</li>
+          <li class="list-dot__item">指定の日時・期間の記載がある場合はその日時・期間のみ有効です。</li>
+          <li class="list-dot__item">入場時にチケットが表示できない、著しく読み取り・認証操作が困難と判断された場合は入場できません。</li>
+          <li class="list-dot__item">端末の紛失・破損、データの消失など、いかなる場合でもチケットの再発行はできません。</li>
+        </ul>
+        <a class="text-link my-ticket-text-link" href="/help/about#how_to_enter">入場方法について</a>
+      </section>
+      <!-- ### 利用上の注意 end ### -->
+
+      <!-- ### 販売元 start ### -->
+      <section class="my-ticket-promoter">
+        <h2 class="heading02">販売元</h2>
+        <section class="my-ticket-promoter__content">
+          <div class="my-ticket-promoter__text-box">
+            <h3 class="my-ticket-promoter__title">株式会社CHARAMEK</h3>
+              <a class="text-link my-ticket-text-link" href="/p/abojb">販売元情報を見る</a>
+          </div>
+        </section>
+      </section>
+      <!-- ### 販売元 end ### -->
+    </section>
+  </div>
+  <!-- #### ly-container end #### -->
+</main>
+
+      <footer class="footer ">
+  <div class="footer-page-top" data-controller="smooth_scroll">
+    <a class="footer-page-top__link js-scroll" data-action="click-&gt;smooth_scroll#scroll" href="#top">ページ上部へ</a>
+  </div>
+
+  <turbo-frame id="breadcrumbs">
+      <nav class="breadcrumb" aria-label="現在位置">
+    <ul class="breadcrumb__list">
+        <li class="breadcrumb__item">
+            <a class="breadcrumb__link" data-turbo="false" target="" rel="" href="/my_top">マイトップ</a>
+        </li>
+        <li class="breadcrumb__item">
+            <a class="breadcrumb__link" data-turbo="false" target="" rel="" href="/mytickets">マイチケット</a>
+        </li>
+        <li class="breadcrumb__item">
+            【池袋本館：先着予約：12月3日(木)】『無期迷途』Special Collaboration vol.2のチケット詳細
+        </li>
+    </ul>
+  </nav>
+
+</turbo-frame>
+  <div class="footer-top">
+    <a class="footer-top__link" target="_blank" rel="" href="https://livepocket.jp/owner/">
+      <div class="footer-top__image-area">
+        <div class="footer-top__image">
+          <img alt="QRコードが映ったスマートフォンの画像" width="142" height="280" loading="lazy" src="/packs/user/media/images/img_phone-e5c14d0e076ad50f1abd.webp" />
+        </div>
+        <ul class="footer-top__list">
+          <li class="footer-top__item">
+            <img alt="" width="80" height="80" loading="lazy" class="footer-top__icon" src="/packs/user/media/images/icon/white/ico_easy_use-9f92ef362d77c7bf5ac9.svg" />
+            <p class="footer-top__text">誰でもかんたん<br />すぐに利用可能</p>
+          </li>
+          <li class="footer-top__item">
+            <img alt="" width="80" height="80" loading="lazy" class="footer-top__icon" src="/packs/user/media/images/icon/white/ico_no_examination-f5b41d23c55ff401bfb1.svg" />
+            <p class="footer-top__text">利用料金0円<br />事前審査なし</p>
+          </li>
+          <li class="footer-top__item">
+            <img alt="" width="80" height="80" loading="lazy" class="footer-top__icon" src="/packs/user/media/images/icon/white/ico_support-c070786746fc1ebe6b03.svg" />
+            <p class="footer-top__text">安心の<br />手厚いサポート</p>
+          </li>
+        </ul>
+      </div>
+      <div class="footer-top__copy-area">
+        <p class="footer-top__copy">
+          <span class="footer-top__copy-sub">誰でも簡単に、今すぐ売れる</span>
+          電子チケット販売サービス
+        </p>
+        <div class="footer-top__button-area">
+          <span class="footer-top__button">チケットを販売する</span>
+        </div>
+      </div>
+</a>  </div>
+
+  <div class="footer-bottom">
+    <div class="footer-bottom__inner">
+      <div class="footer-sns">
+        <p class="footer-sns__title">各種公式SNS</p>
+        <ul class="footer-sns__list">
+          <li class="footer-sns__item">
+            <a target="_blank" rel="noopener noreferrer" class="footer-sns__link" href="https://x.com/livepocket">
+              <img alt="X（旧Twitter）" width="30" height="30" loading="lazy" src="/packs/user/media/images/icon/black/ico_x-0dc806b7e81e0af213d3.svg" />
+              <img alt="X（旧Twitter）" width="30" height="30" class="footer-sns__link-hover" aria-hidden="true" src="/packs/user/media/images/icon/main/ico_x-cbd1d3a71238f4cb7bdd.svg" />
+</a>          </li>
+          <li class="footer-sns__item">
+            <a target="_blank" rel="noopener noreferrer" class="footer-sns__link" href="https://www.instagram.com/livepocketticket/">
+              <img alt="Instagram" width="30" height="30" loading="lazy" src="/packs/user/media/images/icon/black/ico_instagram-7915994d29f2790bedb5.svg" />
+              <img alt="Instagram" width="30" height="30" class="footer-sns__link-hover" aria-hidden="true" src="/packs/user/media/images/icon/main/ico_instagram-e4ed68102fa0d830a49f.svg" />
+</a>          </li>
+          <li class="footer-sns__item">
+            <a target="_blank" rel="noopener noreferrer" class="footer-sns__link" href="https://www.facebook.com/livepocketofficial">
+              <img alt="Facebook" width="30" height="30" loading="lazy" src="/packs/user/media/images/icon/black/ico_facebook-babdc66243dc496e9475.svg" />
+              <img alt="Facebook" width="30" height="30" class="footer-sns__link-hover" aria-hidden="true" src="/packs/user/media/images/icon/main/ico_facebook-b1373d531a80b95face0.svg" />
+</a>          </li>
+        </ul>
+      </div>
+
+      <nav class="footer-nav">
+        <p class="footer-nav__title">チケット販売事業者の方</p>
+        <ul class="footer-nav__list">
+          <li class="footer-nav__item">
+            <a class="footer-nav__link" target="" rel="" href="https://livepocket.jp/owner/">LivePocketでチケットを販売する</a>
+          </li>
+          <li class="footer-nav__item">
+            <a class="footer-nav__link" target="" rel="" href="https://livepocket.jp/owner/sell_commission">LivePocketの手数料・費用</a>
+          </li>
+        </ul>
+
+        <p class="footer-nav__title">チケットを買いたい方</p>
+        <ul class="footer-nav__list">
+          <li class="footer-nav__item">
+            <a class="footer-nav__link" target="" rel="" href="/event/search">イベントを探す</a>
+          </li>
+          <li class="footer-nav__item">
+            <a class="footer-nav__link" target="" rel="" href="/news">LivePocketからのお知らせ</a>
+          </li>
+          <li class="footer-nav__item">
+            <a class="footer-nav__link" target="" rel="" href="/regist_navigation/user">LivePocketとは?</a>
+          </li>
+          <li class="footer-nav__item">
+            <a class="footer-nav__link" target="" rel="" href="/help/about">LivePocketの使い方</a>
+          </li>
+          <li class="footer-nav__item">
+            <a class="footer-nav__link" target="" rel="" href="https://faq.livepocket.jp/livepocket-ticket-user/?site=49XFKFIO">FAQ</a>
+          </li>
+        </ul>
+
+        <ul class="footer-link">
+          <li class="footer-link__item">
+            <a class="footer-link__link" target="" rel="" href="https://livepocket.jp/accessibility">ウェブアクセシビリティの取り組み</a>
+          </li>
+          <li class="footer-link__item">
+            <a class="footer-link__link" target="" rel="" href="https://livepocket.jp/commercial">特定商取引法に関する記載</a>
+          </li>
+          <li class="footer-link__item">
+            <a class="footer-link__link" target="" rel="" href="https://livepocket.jp/term">利用規約</a>
+          </li>
+          <li class="footer-link__item">
+            <a class="footer-link__link" target="_blank" rel="noopener noreferrer" href="https://livepocket.co.jp">
+              運営会社<span class="icon-blank">新しいウインドウで開く</span>
+</a>          </li>
+          <li class="footer-link__item">
+            <a class="footer-link__link" target="_blank" rel="noopener noreferrer" href="https://livepocket.co.jp/privacy">
+              プライバシーポリシー<span class="icon-blank">新しいウインドウで開く</span>
+</a>          </li>
+        </ul>
+      </nav>
+
+      <p class="footer-bottom__text">
+        掲載されている全てのコンテンツについて管理者の承諾を得ず、無断で複写・複製・転送することは固く禁じています。<br />
+        「LivePocket」はLivePocket株式会社の登録商標です。（登録第5600161号）<br />
+        QRコードは株式会社デンソーウェーブの登録商標です。
+      </p>
+    </div>
+  </div>
+  <small class="footer__copyright">Copyright © LivePocket All Rights Reserved.</small>
 </footer>
 
-
-<!-- resale footer -->
-<!-- /resale footer -->
-<!-- pageTopFixed -->
-<section class="ypMdPageTopFixed" style="position:fixed;bottom:0;right:0;width:70px" id="pgtop">
-<div id="back-top" class="elInner">
-<p class="decPageTop"><a href="javascrip:void(0);"><span>▲このページのトップへ</span></a></p>
-</div>
-</section><!-- /ypMdPageTopFixed -->
-<!-- /pageTopFixed -->
-
-
-
-<div tabindex="-1" role="dialog" class="ui-dialog ui-corner-all ui-widget ui-widget-content ui-front ui-dialog-buttons ui-resizable" aria-describedby="dialog-message" aria-labelledby="ui-id-1" style="position: absolute; height: auto; width: 300px; top: 463.215px; left: 545.5px; z-index: 101; background: none rgb(255, 255, 255); color: rgb(34, 34, 34); font-size: 12px; text-align: center; border: 1px solid rgb(170, 170, 170); display: none;"><div class="ui-dialog-titlebar ui-corner-all ui-widget-header ui-helper-clearfix"><span id="ui-id-1" class="ui-dialog-title">&nbsp;</span><button type="button" class="ui-button ui-corner-all ui-widget ui-button-icon-only ui-dialog-titlebar-close" title="Close" style="background-color: rgb(255, 255, 255); border: 1px solid rgb(170, 170, 170);"><span class="ui-button-icon ui-icon ui-icon-closethick"></span><span class="ui-button-icon-space"> </span>Close</button></div><div id="dialog-message" class="ui-dialog-content ui-widget-content" style="width: auto; min-height: 0px; max-height: none; height: auto; background: none; color: rgb(34, 34, 34); font-size: 12px; text-align: center;">
-<p>一度受付すると元に戻せません。<br>チケットを受付しますか？</p>
-</div><div class="ui-dialog-buttonpane ui-widget-content ui-helper-clearfix" style="background: none; color: rgb(34, 34, 34); font-size: 12px; text-align: center;"><div class="ui-dialog-buttonset dec-button-double"><button type="button" class="ui-button ui-corner-all ui-widget" style="background-color: rgb(255, 255, 255); border: 1px solid rgb(170, 170, 170);">はい</button><button type="button" class="ui-button ui-corner-all ui-widget" style="background-color: rgb(255, 255, 255); border: 1px solid rgb(170, 170, 170);">いいえ</button></div></div><div class="ui-resizable-handle ui-resizable-n" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-e" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-s" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-w" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-se ui-icon ui-icon-gripsmall-diagonal-se" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-sw" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-ne" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-nw" style="z-index: 90;"></div></div></body></html>
+    </div>
+    
+  </body>
+</html>
